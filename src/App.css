@@ -1,9 +1,37 @@
 
+/* header styles */
+#header-name {
+  text-decoration: none;
+}
+
+#header-name  {
+  text-align: center;
+  color: #ffffff;
+}
+/* nav styles */
+#nav-items a{
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 3rem;
+}
+
+.dib {
+  display: inline-block;
+}
+
+#nav-items {
+  display: inline-block;
+}
+
+
 /* about section styles */
 #about-me {
   text-align:center;
 }
 
+.about {
+  text-align: center;
+}
 
 .App {
   text-align: center;
