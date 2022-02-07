@@ -23,6 +23,14 @@
   display: inline-block;
 }
 
+#nav-items a {
+  color: #ffffff;
+}
+
+#nav-items a:hover {
+  color: lightgray;
+}
+
 
 /* about section styles */
 #about-me {

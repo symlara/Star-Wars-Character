@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation';
-import About from './About';
-// import Films from './Films';
+// import About from './About';
+import Films from './Films';
 
 function Header() {
-    const [currentPage, handlePageChange] = useState("About");
+    const [currentPage, handlePageChange] = useState("Films");
 
     // The renderPage method uses a switch statement to render the appropriate current page
   const renderPage = () => {
     switch (currentPage) {
-      case "About":
-        return <About />;
-    //   case "Films":
-    //     return <Films />;
+      case "Films":
+        return <Films />;
       default:
-        return <About />;
+        return null;
     }
   };
 
