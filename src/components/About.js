@@ -1,6 +1,6 @@
 import React from 'react';
 // import axios from 'react';
-import headshot from '../assets/images/Leia_Organa.png';
+import headshot from '../assets/images/han-solo.png';
   
 
 
@@ -11,12 +11,12 @@ function About() {
         <div className="container">
 
         <article className="pa3 pa5-ns" id="about-me">
-            <h1>Leia Organa</h1>
-            <img src={headshot} alt="leia"/>
+            <h1>Han Solo</h1>
+            <img src={headshot} alt="han"/>
         </article>
 
-        <div class="pa4">
-            <h1 class="f2 about">About Princess Leia</h1>
+        <div class="pa4" id="about-han">
+            <h1 class="f2">About Han Solo</h1>
 
             <ul>
                 <li>

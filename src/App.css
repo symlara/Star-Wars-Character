@@ -4,10 +4,13 @@
   text-decoration: none;
 }
 
-#header-name  {
+#header-name {
   text-align: center;
   color: #ffffff;
+  padding: 2rem;
 }
+
+
 /* nav styles */
 #nav-items a{
   text-decoration: none;
@@ -37,8 +40,43 @@
   text-align:center;
 }
 
-.about {
+#about-han {
   text-align: center;
+}
+
+#about-han li {
+  padding-bottom: 3rem;
+}
+
+/* film styles */
+
+#films-page {
+  padding: 3rem;
+  text-align: center;
+}
+
+.films p {
+  padding: 3rem;
+}
+
+#han-films {
+  text-align: center;
+}
+
+#han-films li{
+  padding-bottom: 3rem;
+}
+
+/*search field features */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .App {
