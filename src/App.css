@@ -1,3 +1,10 @@
+
+/* about section styles */
+#about-me {
+  text-align:center;
+}
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +43,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*media queries */
