@@ -11,3 +11,4 @@ This project has been created to show spotlight on Han Solo from Star Wars as a 
 * To run this app in your browser on your local machine be sure to first install all dependencies, <u>npm install</u>, onto your machine, then run <i>npm start</i>
 * To push the new updates of this app onto the gh-pages you will need to run <i>npm run deploy</i>.
 
+Live site : <a href="https://symlara.github.io/Star-Wars-Character/">https://symlara.github.io/Star-Wars-Character/</a>
