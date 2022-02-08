@@ -1,6 +1,6 @@
 # Han Solo Profile Page
 <a href="#"><img src="https://img.shields.io/badge/javascript-80%25-blue"></a>
-<a href="#"><img src="https://img.shields.io/badge/css-12%25-brightgreen"></a>
+<a href="#"><img src="https://img.shields.io/badge/css-50%25-lightgrey"></a>
 <a href="#"><img src="https://img.shields.io/badge/dependencies-100%25-gree"></a>
 <a href="#"><img src="https://img.shields.io/badge/React-100%25-blueviolet"></a>
 
