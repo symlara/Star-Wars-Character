@@ -1,25 +1,55 @@
 import React from 'react';
-import headshot1 from '../assets/images/han-solo-1.png';
+import FilmData from '../data/film-1.json';
+import FilmData2 from '../data/film-2.json';
+import FilmData3 from '../data/film-3.json';
+import headshot1 from '../assets/images/han-solo-1.png'
 
 function Films() {
     return (
-        <section>
-            <div className="films">
-            <article className="pa3 pa5-ns" id="about-me">
-            <h1>Han Solo</h1>
-            <img src={headshot1} alt="han"/>
-        </article>
-                <h1 id="films-page">Films has appeared in</h1>
-            
-            <div id="han-films">                
-                <ul>
-                    <li>A New Hope</li>
-                    <li>The Empire Strikes Back</li>
-                    <li>Return of the Jedi</li>
-                </ul>
-            </div>
-            </div>
-        </section>
+       <div>
+           <div>
+               <img src={headshot1} alt="han-solo" />
+           </div>
+           {/* film 1 info starts here */}
+           {FilmData.map((filmDetail, index) => {
+               return <div className="film1">
+                   <h1>Films Han Solo has appeared in</h1>
+
+                   <strong>Film Title:</strong><i><p className="film-1"> {filmDetail.title}</p></i>
+                   <strong>Film Director:</strong> <i><p>{filmDetail.director}</p></i>
+                   <strong>Film Opening Crawl:</strong> <i><p><br></br>{filmDetail.opening_crawl}</p></i>
+
+                   </div>
+
+           })}
+
+
+           <hr className="border1"></hr>
+           <p>&nbsp;</p>
+           <p>&nbsp;</p>
+
+           {/* film 2 info starts here */}
+           {FilmData2.map((filmDetail2, index) => {
+               return <div className="film2">
+                    <strong>Film Title:</strong><i><p className="film-2">{filmDetail2.title}</p></i>
+                    <strong>Film Director:</strong><i><p className="film-2">{filmDetail2.director}</p></i>
+                    <strong>Film Opening Crawl</strong><i><p className="film-2">{filmDetail2.opening_crawl}</p></i>
+                   </div>
+           })}
+
+            <hr className="border2"></hr>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+            {/* film 3 info starts here */}
+            {FilmData3.map((filmDetail3, index) => {
+               return <div className="film3">
+                    <strong>Film Title:</strong><i><p className="film-3">{filmDetail3.title}</p></i>
+                    <strong>Film Director:</strong><i><p className="film-3">{filmDetail3.director}</p></i>
+                    <strong>Film Opening Crawl</strong><i><p className="film-3">{filmDetail3.opening_crawl}</p></i>
+                   </div>
+           })}
+       </div>
     )
 }
 

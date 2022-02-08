@@ -51,22 +51,63 @@
 /* film styles */
 
 #films-page {
-  padding: 3rem;
+  padding-right: 3rem;
   text-align: center;
 }
 
-.films p {
-  padding: 3rem;
-}
-
-#han-films {
+.film1 h1 {
   text-align: center;
 }
 
-#han-films li{
-  padding-bottom: 3rem;
+.film1, .film-1 {
+  text-align: center;
 }
 
+.film1 p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.film2, .film-2 {
+  text-align: center;
+}
+
+.film2 p {
+  font-size: 15px;
+
+}
+
+.border1 {
+  stroke: lightgray;
+}
+
+.border2 {
+  stroke: lightgray;
+}
+
+.film3, .film-3 {
+  text-align: center;
+}
+
+/*starship styles */
+.starship1 , .starship-1 {
+  text-align: center;
+}
+.starship1 p{
+  padding: 4px;
+}
+
+.starship2, .starship-2 {
+  text-align: center;
+}
+
+#falcon {
+  width: 50%;
+}
+
+#imperial {
+  width: 40%;
+}
 /*search field features */
 
 .visually-hidden {
@@ -78,6 +119,23 @@
   white-space: nowrap;
   width: 1px;
 }
+
+#header-search {
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+button {
+border-radius: 4px;
+text-align: center;
+}
+
+button:hover {
+  color: gray;
+  cursor: pointer;
+}
+
 
 .App {
   text-align: center;

@@ -28,8 +28,8 @@ function Navigation(props) {
             </a>
           </li>
         ))}
-      </ul>
-      </nav>
+          </ul>
+            </nav>
         </div>
     );
 }

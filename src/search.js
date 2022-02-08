@@ -9,7 +9,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
     };
 
     return (
-        <form
+        <form  id="info-form"
             action="/"
             method="get"
             autoComplete="off"
@@ -27,7 +27,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
                 id="header-search"
                 placeholder="Search character name"
                 name="han solo"
-            />
+            /> <p></p>
             <button type="submit">Search</button>
         </form>
     );

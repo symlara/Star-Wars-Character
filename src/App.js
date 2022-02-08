@@ -4,13 +4,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 // import About from './components/About';
 import Header from './components/Header';
-import Films from './components/Films';
+// import Films from './components/Films';
 import Search from './search';
 import Announcer from './announcer';
 
+// import CharacterList from './character/CharacterList';
+
 // list used to search for the name we want
 const characters = [
-  { id: '1', name: 'han solo' }
+  { id: '1', name: 'han solo', key:'1' }
 ];
 
 const filterCharacters = (characters, query) => {
@@ -24,6 +26,8 @@ const filterCharacters = (characters, query) => {
   });
 };
 
+//app function begins here
+
 const App = () => {
   const { search } = window.location;
   const query = new URLSearchParams(search).get('han solo');
@@ -32,23 +36,25 @@ const App = () => {
 
 
   return (
+    
     <Router>
     <div>
       <Header></Header>
-      <Announcer 
-      message={`${filteredCharacters.length} characters`}
-      />
       <Search 
       searchQuery={searchQuery}
       setSearchQuery={setSearchQuery}
      />
+      <Announcer 
+      message={`${filteredCharacters.length} characters`}
+      />
      <ul>
        {/* using map function to loop and render name  */}
        {filteredCharacters.map((character) => {
          <li key={character.id}>{character.name}</li>
        })}
      </ul>
-      <Films></Films>
+      {/* <Films></Films> */}
+      {/* <CharacterList /> */}
       
     </div>
 </Router>

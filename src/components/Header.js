@@ -1,3 +1,4 @@
+//Needs to include Name and pull in Navigation component
 import React, { useState } from 'react';
 import Navigation from './Navigation';
 import About from './About';
@@ -10,6 +11,7 @@ function Header() {
     // The renderPage method uses a switch statement to render the appropriate current page
   const renderPage = () => {
     switch (currentPage) {
+          // be sure to capitalize strings
       case "About":
         return <About />;
         
@@ -38,7 +40,7 @@ handlePageChange={handlePageChange}
 <main>
     <div>{renderPage(currentPage)}</div>
 </main>
-      </div>
+    </div>
       </header>
   );
 }
