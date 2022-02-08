@@ -28,7 +28,7 @@ function Header() {
   return (
       <header>
       <div>
-      <h1 className="header-info"><a href="/" id="header-name">Han Solo Profile</a></h1>
+      <h1 className="header-info"><a href="https://symlara.github.io/Star-Wars-Character/" id="header-name">Han Solo Profile</a></h1>
       </div>
             {/* Pass the state value and the setter as props
              to NavTabs */}
