@@ -13,7 +13,7 @@ function About() {
             <img src={headshot} alt="han-solo"/>
             
             {CharacterData.map((characterDetail, index) => {
-                return <div>
+                return <div key="{character}">
                     <p><strong>Character Height:</strong>{characterDetail.height}</p>
                     <p><strong>Character Weight: </strong>{characterDetail.mass}</p>
                     <p><strong>Character Hair Color:</strong>{characterDetail.hair_color}</p>

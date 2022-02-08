@@ -7,7 +7,7 @@ import headshot1 from '../assets/images/han-solo-1.png'
 function Films() {
     return (
        <div className="container">
-           <div>
+           <div className="headshot1">
                <img src={headshot1} alt="han-solo" />
            </div>
            {/* film 1 info starts here */}

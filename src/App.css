@@ -10,6 +10,11 @@
   padding: 2rem;
 }
 
+/*form styles */
+#info-form {
+  text-align: center;
+  padding-top: 30px;
+}
 
 /* nav styles */
 #nav-items a{
@@ -178,3 +183,85 @@ button:hover {
 
 
 /*media queries */
+
+@media screen and (max-width: 800px) {
+
+  /*header info */
+  .header-info {
+    font-size: 25px;
+    text-align:center;
+  }
+
+  /*nav styles */
+  #nav-items a {
+    font-size: 15px;
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+
+/*about styles */
+  #about-han h1 {
+    font-size: 20px;
+  }
+
+  #about-han img {
+    width: 50%;
+  }
+
+  #about-han p{
+    font-size: 15px;
+  }
+
+  .headshot1 {
+    width: 50%;
+  }
+
+/* film styles */
+  .film1 h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .film1 p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .film2 p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .film3 p {
+    font-size: 15px;
+    text-align:center;
+  }
+
+  /* starship styles */
+  #falcon {
+    width: 100%;
+  }
+
+  .starship1 h1 {
+    font-size: 20px;
+  }
+  
+  .starship1 p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .starship2 p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #imperial {
+    width: 100%;
+  }
+  
+}
