@@ -13,7 +13,7 @@ function Starships () {
            </div>
            {/* starship 1 info starts here */}
             {StarshipData1.map((starshipDetail, index) => {
-               return <div className="starship1">
+               return <div key="{starship}" className="starship1">
                    <h1>Starships Flown</h1>
 
                    <strong>Starship Name:</strong><i><p className="starship-1"> {starshipDetail.name}</p></i>
@@ -31,7 +31,7 @@ function Starships () {
            </div>
             {/* starship 2 info starts here */}
            {StarshipData2.map((starshipDetail2, index) => {
-               return <div className="starship2">
+               return <div key="{starship}" className="starship2">
 
                    <strong>Starship Name:</strong><i><p className="starship-2"> {starshipDetail2.name}</p></i>
                    <strong>Starship Model:</strong> <i><p>{starshipDetail2.model}</p></i>

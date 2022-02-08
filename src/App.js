@@ -1,14 +1,10 @@
 import {useState} from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
-// import logo from './logo.svg';
 import './App.css';
-// import About from './components/About';
 import Header from './components/Header';
-// import Films from './components/Films';
 import Search from './search';
 import Announcer from './announcer';
 
-// import CharacterList from './character/CharacterList';
 
 // list used to search for the name we want
 const characters = [
@@ -53,8 +49,6 @@ const App = () => {
          <li key={character.id}>{character.name}</li>
        })}
      </ul>
-      {/* <Films></Films> */}
-      {/* <CharacterList /> */}
       
     </div>
 </Router>
