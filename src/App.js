@@ -1,60 +1,60 @@
-import {useState} from "react";
-import { BrowserRouter as Router } from 'react-router-dom';
-import './App.css';
-import Header from './components/Header';
-import Search from './search';
-import Announcer from './announcer';
+import React, { useState } from 'react';
+import './index.css';
+import Header from "./components/Header";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 
-// list used to search for the name we want
-const characters = [
-  { id: '1', name: 'han solo', key:'1' }
-];
 
-const filterCharacters = (characters, query) => {
-  if (!query) {
-      return characters;
+
+
+function App() {
+const [currentTab, setCurrentTab] = useState("about");
+
+const renderTab = () => {
+  
+
+
+  switch (currentTab) {
+    // be sure to capitalize strings
+      case "about":
+        return <About />;
+        case "portfolio":
+          return <Portfolio />;
+          case "contact":
+            return <Contact />;
+            case "resume":
+              return <Resume />;
+        default:
+          return null;
   }
-
-  return characters.filter((character) => {
-      const characterName = character.name.toLowerCase();
-      return characterName.includes(query);
-  });
 };
 
-//app function begins here
-
-const App = () => {
-  const { search } = window.location;
-  const query = new URLSearchParams(search).get('han solo');
-  const [searchQuery, setSearchQuery] = useState(query || '');
-  const filteredCharacters = filterCharacters(characters, searchQuery);
 
 
-  return (
-    
-    <Router>
+return (
+  <div>
     <div>
-      <Header></Header>
-      <Search 
-      searchQuery={searchQuery}
-      setSearchQuery={setSearchQuery}
-     />
-      <Announcer 
-      message={`${filteredCharacters.length} characters`}
-      />
-     <ul>
-       {/* using map function to loop and render name  */}
-       {filteredCharacters.map((character) => {
-         <li key={character.id}>{character.name}</li>
-       })}
-     </ul>
-      
+    <Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
     </div>
-</Router>
+   
+    
+    <div>
+    <main>
+    {renderTab()}
+      </main>
+    </div>
+
+    <div>
+      { <Footer></Footer> }
+    </div>
+
+
+  </div>
   );
 }
 
-
 export default App;
-
