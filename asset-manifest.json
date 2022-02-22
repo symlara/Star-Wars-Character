@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/symlara/symlar-portfolio/static/css/main.94cb7eb7.css",
+    "main.js": "/symlara/symlar-portfolio/static/js/main.a08ad75b.js",
+    "static/js/787.7efd31bd.chunk.js": "/symlara/symlar-portfolio/static/js/787.7efd31bd.chunk.js",
+    "static/media/vanderbilt-homepage.png": "/symlara/symlar-portfolio/static/media/vanderbilt-homepage.64809d9472a0fbcd829d.png",
+    "static/media/lifeform_background.jpg": "/symlara/symlar-portfolio/static/media/lifeform_background.e4ec5225e261cdc2b917.jpg",
+    "static/media/han-solo-1.png": "/symlara/symlar-portfolio/static/media/han-solo-1.84036d9f6a89ed1878dc.png",
+    "static/media/password-generator.png": "/symlara/symlar-portfolio/static/media/password-generator.881bbe2b61f07b291923.png",
+    "static/media/Symlar_Aaliyah002.JPG": "/symlara/symlar-portfolio/static/media/Symlar_Aaliyah002.960269cdd59bee3a6eed.JPG",
+    "static/media/note-taker.png": "/symlara/symlar-portfolio/static/media/note-taker.c03fcb45ca052735b327.png",
+    "static/media/allenstone.jpg": "/symlara/symlar-portfolio/static/media/allenstone.29237ddd9c9a20537e83.jpg",
+    "static/media/Back_Of_My_Mind_By_H.E.R.png": "/symlara/symlar-portfolio/static/media/Back_Of_My_Mind_By_H.E.R.ebd29e27500a8b5d74f0.png",
+    "index.html": "/symlara/symlar-portfolio/index.html",
+    "main.94cb7eb7.css.map": "/symlara/symlar-portfolio/static/css/main.94cb7eb7.css.map",
+    "main.a08ad75b.js.map": "/symlara/symlar-portfolio/static/js/main.a08ad75b.js.map",
+    "787.7efd31bd.chunk.js.map": "/symlara/symlar-portfolio/static/js/787.7efd31bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94cb7eb7.css",
+    "static/js/main.a08ad75b.js"
+  ]
+}
